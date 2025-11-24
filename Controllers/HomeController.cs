@@ -7,8 +7,8 @@ namespace Shoppia.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        // test
 
-        // I'm Here.
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
