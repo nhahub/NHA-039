@@ -8,6 +8,7 @@ namespace Shoppia.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         // test
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
