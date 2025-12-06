@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shoppia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01ab2435e55798f9c7c29bff3aa9883a7d963420")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shoppia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shoppia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

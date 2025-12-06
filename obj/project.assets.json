@@ -2746,23 +2746,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahmed\\.nuget\\packages\\": {},
+    "C:\\Users\\albar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Shoppia.csproj",
+      "projectUniqueName": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Shoppia.csproj",
       "projectName": "Shoppia",
-      "projectPath": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Shoppia.csproj",
-      "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\ideabad\\DEPI\\Project\\Shoppia\\obj\\",
+      "projectPath": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Shoppia.csproj",
+      "packagesPath": "C:\\Users\\albar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\albar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2819,7 +2819,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

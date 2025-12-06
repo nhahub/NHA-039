@@ -1,37 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ideabad\\DEPI\\Project\\Shoppia\\",
+  "WorkspaceRootPath": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|d:\\ideabad\\depi\\project\\shoppia\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|d:\\ideabad\\depi\\project\\shoppia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|d:\\ideabad\\depi\\project\\shoppia\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|d:\\ideabad\\depi\\project\\shoppia\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|d:\\ideabad\\depi\\project\\shoppia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|d:\\ideabad\\depi\\project\\shoppia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|c:\\users\\albar\\source\\repos\\nha-039\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|d:\\ideabad\\depi\\project\\shoppia\\models\\shoppiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|c:\\users\\albar\\source\\repos\\nha-039\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|c:\\users\\albar\\source\\repos\\nha-039\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|c:\\users\\albar\\source\\repos\\nha-039\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|c:\\users\\albar\\source\\repos\\nha-039\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|c:\\users\\albar\\source\\repos\\nha-039\\models\\shoppiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:models\\shoppiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|d:\\ideabad\\depi\\project\\shoppia\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|c:\\users\\albar\\source\\repos\\nha-039\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E283894-CF02-4EB8-B1D2-8DEFF7717E5F}|Shoppia.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,111 +38,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-24T20:39:58.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-24T20:39:56.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-24T20:39:50.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-24T20:39:46.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Program.cs",
+              "ToolTip": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-24T20:17:31.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\ideabad\\DEPI\\Project\\Shoppia\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\ideabad\\DEPI\\Project\\Shoppia\\appsettings.json",
+              "ToolTip": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-24T20:07:07.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvxEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:54:23.905Z",
+              "WhenOpened": "2025-11-24T22:18:17.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T20:39:58.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T22:51:11.334Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T19:54:23.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ShoppiaContext.cs",
-              "DocumentMoniker": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Models\\ShoppiaContext.cs",
+              "DocumentMoniker": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Models\\ShoppiaContext.cs",
               "RelativeDocumentMoniker": "Models\\ShoppiaContext.cs",
-              "ToolTip": "D:\\ideabad\\DEPI\\Project\\Shoppia\\Models\\ShoppiaContext.cs",
+              "ToolTip": "C:\\Users\\albar\\Source\\Repos\\NHA-039\\Models\\ShoppiaContext.cs",
               "RelativeToolTip": "Models\\ShoppiaContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwCsAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T19:51:37.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T19:51:37.35Z"
             }
           ]
         }
