@@ -108,5 +108,51 @@
             }
         </div>
     </section>
+    <!-- Top vendors (static for now) -->
+    <section class="mb-5 mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h3 mb-0">Top Vendors</h2>
+            <a asp-controller="Vendors" asp-action="Index" class="text-decoration-none">
+                View all vendors
+            </a>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Vendor One</h5>
+                        <p class="card-text small text-muted">
+                            Electronics & gadgets.
+                        </p>
+                        <span class="badge bg-success">Active</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Vendor Two</h5>
+                        <p class="card-text small text-muted">
+                            Fashion & accessories.
+                        </p>
+                        <span class="badge bg-success">Active</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Vendor Three</h5>
+                        <p class="card-text small text-muted">
+                            Home & kitchen supplies.
+                        </p>
+                        <span class="badge bg-secondary">Inactive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 </div>
