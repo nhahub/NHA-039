@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -5,6 +6,7 @@ using Shoppia.Models;
 
 namespace Shoppia.Controllers
 {
+    [Authorize]
     public class SupplyOrdersController : Controller
     {
         private readonly ShoppiaContext _context;
