@@ -1,8 +1,112 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container py-4">
+
+    <!-- Hero / Banner -->
+    <section class="row align-items-center mb-5">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <h1 class="display-4 fw-bold">Welcome to Shoppia</h1>
+            <p class="lead">
+                Multi‑vendor marketplace where different sellers can list their products
+                and customers can shop everything in one place.
+            </p>
+            <a class="btn btn-primary btn-lg me-2" href="#">
+                Start Shopping
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="#">
+                Become a Vendor
+            </a>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="border rounded-3 p-4 bg-light">
+                <h5 class="fw-semibold mb-3">Why Shoppia?</h5>
+                <ul class="list-unstyled mb-0 text-start">
+                    <li>• Many vendors, one marketplace.</li>
+                    <li>• Secure checkout and order tracking.</li>
+                    <li>• Easy dashboard for vendors to manage products.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories section -->
+    <section class="mb-5">
+        <h2 class="h3 mb-4">Popular Categories</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Electronics</h5>
+                        <p class="card-text small text-muted">
+                            Phones, laptops and accessories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Fashion</h5>
+                        <p class="card-text small text-muted">
+                            Clothes, shoes and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Home &amp; Kitchen</h5>
+                        <p class="card-text small text-muted">
+                            Furniture and home accessories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Beauty</h5>
+                        <p class="card-text small text-muted">
+                            Skincare and cosmetics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured products -->
+    <section class="mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h3 mb-0">Featured Products</h2>
+            <a href="#" class="text-decoration-none">View all</a>
+        </div>
+
+        <div class="row g-4">
+            @for (int i = 1; i <= 4; i++)
+            {
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="ratio ratio-4x3 bg-light">
+                            <!-- Placeholder image area -->
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Product @i</h5>
+                            <p class="card-text small text-muted">
+                                Short description for product @i.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">$@((i * 10) + 9)</span>
+                            <button class="btn btn-sm btn-primary">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
 </div>
