@@ -6,7 +6,7 @@ using Shoppia.Models;
 
 namespace Shoppia.Controllers
 {
-    [Authorize]
+   [Authorize]
     public class ProductsController : Controller
     {
         private readonly ShoppiaContext _context;
@@ -17,6 +17,7 @@ namespace Shoppia.Controllers
         }
 
         // GET: Products
+[AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var products = await _context.Products
@@ -26,6 +27,7 @@ namespace Shoppia.Controllers
         }
 
         // GET: Products/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
