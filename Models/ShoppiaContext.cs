@@ -2,11 +2,12 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Shoppia.Models;
 
-public partial class ShoppiaContext : DbContext
+public partial class ShoppiaContext : IdentityDbContext<ApplicationUser>
 {
     public ShoppiaContext()
     {
