@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shoppia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93ed4154d7101e1ce2135a026e1a65214c828985")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ad43f7927ea70308f83ea2a72a0f5d864a67d1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shoppia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shoppia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
