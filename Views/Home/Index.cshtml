@@ -10,17 +10,26 @@
     <!-- Hero / Banner -->
     <section class="row align-items-center mb-5">
         <div class="col-md-6 mb-3 mb-md-0">
-            <h1 class="display-4 fw-bold">Welcome to Shoppia</h1>
-            <p class="lead">
+            <h1 class="display-4 fw-bold hero-hover">Welcome to Shoppia</h1>
+            <p class="lead hero-hover-sub">
                 Multi‑vendor marketplace where different sellers can list their products
                 and customers can shop everything in one place.
             </p>
-            <a class="btn btn-primary btn-lg me-2" href="#">
+
+
+            <a class="btn btn-primary btn-lg me-2"
+               asp-controller="Products"
+               asp-action="Index">
                 Start Shopping
             </a>
-            <a class="btn btn-outline-secondary btn-lg" href="#">
+
+            </a>
+            <a class="btn btn-outline-secondary btn-lg"
+               asp-controller="Vendors"
+               asp-action="Index">
                 Become a Vendor
             </a>
+
         </div>
         <div class="col-md-6 text-center">
             <div class="border rounded-3 p-4 bg-light">
