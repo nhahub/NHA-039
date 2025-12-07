@@ -1,6 +1,9 @@
-﻿@{
+﻿@model Shoppia.ViewModels.HomeViewModel
+
+@{
     ViewData["Title"] = "Home";
 }
+
 
 <div class="container py-4">
 
@@ -86,27 +89,40 @@
         </div>
 
         <div class="row g-4">
-            @for (int i = 1; i <= 4; i++)
+            @foreach (var product in Model.FeaturedProducts)
             {
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="ratio ratio-4x3 bg-light">
-                            <!-- Placeholder image area -->
+                        <div class="ratio ratio-4x3 bg-light d-flex align-items-center justify-content-center">
+                            @if (!string.IsNullOrEmpty(product.Photo))
+                            {
+                                <img src="~/images/@product.Photo" class="img-fluid" alt="@product.Name" />
+                            }
+                            else
+                            {
+                                <span class="text-muted">No image</span>
+                            }
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Product @i</h5>
-                            <p class="card-text small text-muted">
-                                Short description for product @i.
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text small text-muted mb-1">
+                                @product.Category?.Name
                             </p>
                         </div>
                         <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                            <span class="fw-bold">$@((i * 10) + 9)</span>
-                            <button class="btn btn-sm btn-primary">Add to cart</button>
+                            <span class="fw-bold">$@product.Price</span>
+                            <a asp-controller="Products"
+                               asp-action="Details"
+                               asp-route-id="@product.ProductId"
+                               class="btn btn-sm btn-primary">
+                                View
+                            </a>
                         </div>
                     </div>
                 </div>
             }
         </div>
+
     </section>
     <!-- Top vendors (static for now) -->
     <section class="mb-5 mt-4">
@@ -118,41 +134,30 @@
         </div>
 
         <div class="row g-4">
-            <div class="col-12 col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Vendor One</h5>
-                        <p class="card-text small text-muted">
-                            Electronics & gadgets.
-                        </p>
-                        <span class="badge bg-success">Active</span>
+            @foreach (var vendor in Model.TopVendors)
+            {
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@vendor.Name</h5>
+                            <p class="card-text small text-muted">
+                                @vendor.Email
+                            </p>
+                            @if (vendor.IsActive)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Inactive</span>
+                            }
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Vendor Two</h5>
-                        <p class="card-text small text-muted">
-                            Fashion & accessories.
-                        </p>
-                        <span class="badge bg-success">Active</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Vendor Three</h5>
-                        <p class="card-text small text-muted">
-                            Home & kitchen supplies.
-                        </p>
-                        <span class="badge bg-secondary">Inactive</span>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </section>
+
 
 
 </div>
