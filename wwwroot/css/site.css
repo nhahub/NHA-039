@@ -177,3 +177,14 @@ h1, h2, h3 {
         transform: translateY(-1px);
         color: var(--shp-primary);
     }
+.filter-select {
+    border-radius: 999px;
+    padding-inline: 1rem;
+    border-color: #d1d5db;
+    transition: border-color 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+    .filter-select:focus {
+        border-color: var(--shp-primary);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }

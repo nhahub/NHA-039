@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +6,7 @@ using Shoppia.Models;
 
 namespace Shoppia.Controllers
 {
-   [Authorize]
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly ShoppiaContext _context;
@@ -17,36 +17,33 @@ namespace Shoppia.Controllers
         }
 
         // GET: Products
-[AllowAnonymous]
-        public async Task<IActionResult> Index()
+        [AllowAnonymous]
+        public async Task<IActionResult> Index(string search, int? categoryId)
         {
-            var products = await _context.Products
+            var query = _context.Products
                 .Include(p => p.Category)
+                .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                query = query.Where(p => p.Name.Contains(search));
+            }
+
+            if (categoryId.HasValue && categoryId.Value > 0)
+            {
+                query = query.Where(p => p.CategoryId == categoryId.Value);
+            }
+
+            ViewBag.Categories = await _context.Categories
+                .OrderBy(c => c.Name)
                 .ToListAsync();
+
+            var products = await query.ToListAsync();
             return View(products);
         }
 
-        // GET: Products/Details/5
-        [AllowAnonymous]
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var product = await _context.Products
-                .Include(p => p.Category)
-                .FirstOrDefaultAsync(m => m.ProductId == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-
-            return View(product);
-        }
-
         // GET: Products/Create
+
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "Name");
