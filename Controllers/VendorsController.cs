@@ -16,12 +16,14 @@ namespace Shoppia.Controllers
         }
 
         // GET: Vendors
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Vendors.ToListAsync());
         }
 
         // GET: Vendors/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)

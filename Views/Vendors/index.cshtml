@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Shoppia.Models.Vendor>
+
+@{
+    ViewData["Title"] = "Vendors";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3 mb-0">Vendors</h1>
+        <a asp-action="Create" class="btn btn-primary">
+            + Add New Vendor
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            There are no vendors yet.
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var vendor in Model)
+            {
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@vendor.Name</h5>
+                            <p class="card-text small text-muted mb-1">
+                                Email: @vendor.Email
+                            </p>
+                            <p class="card-text small mb-0">
+                                @if (vendor.IsActive)
+                                {
+                                    <span class="badge bg-success">Active</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Inactive</span>
+                                }
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between">
+                            <a asp-action="Details"
+                               asp-route-id="@vendor.VendorId"
+                               class="btn btn-sm btn-outline-secondary">
+                                Details
+                            </a>
+                            <a asp-action="Edit"
+                               asp-route-id="@vendor.VendorId"
+                               class="btn btn-sm btn-outline-primary">
+                                Edit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+

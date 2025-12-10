@@ -42,9 +42,7 @@ public partial class ShoppiaContext : IdentityDbContext<ApplicationUser>
 
     public virtual DbSet<Vendor> Vendors { get; set; }
 
-//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-//        => optionsBuilder.UseSqlServer("");
+    // OnConfiguring متسيباه زي ما هي متعلّقة أو متعدَّلة عندكم
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -144,6 +142,9 @@ public partial class ShoppiaContext : IdentityDbContext<ApplicationUser>
                 .HasDefaultValue(true)
                 .HasAnnotation("Relational:DefaultConstraintName", "DF_Vendors_IsActive");
         });
+
+        // السطر المهم عشان Identity يظبط الكيّات بتاعته
+        base.OnModelCreating(modelBuilder);
 
         OnModelCreatingPartial(modelBuilder);
     }

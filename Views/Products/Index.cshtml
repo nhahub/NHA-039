@@ -1,0 +1,111 @@
+﻿@model IEnumerable<Shoppia.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+    var categories = ViewBag.Categories as List<Shoppia.Models.Category>;
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3 mb-0">Products</h1>
+        <a asp-action="Create" class="btn btn-primary">
+            + Add New Product
+        </a>
+    </div>
+
+    <!-- Filter card -->
+    <div class="card border-0 shadow-sm mb-4 card-hover">
+        <div class="card-body">
+            <form asp-action="Index" method="get" class="row g-3 align-items-end">
+                <div class="col-md-4">
+                    <label class="form-label">Search by name</label>
+                    <input type="text"
+                           name="search"
+                           value="@Context.Request.Query["search"]"
+                           class="form-control"
+                           placeholder="Enter product name..." />
+                </div>
+
+                <div class="col-md-4">
+                    <label class="form-label">Category</label>
+                    <select name="categoryId" class="form-select filter-select">
+                        <option value="">All categories</option>
+                     
+
+                        @if (categories != null)
+                        {
+                            var selectedCategory = Context.Request.Query["categoryId"].ToString();
+                            foreach (var c in categories)
+                            {
+                                var selected = selectedCategory == c.CategoryId.ToString() ? "selected" : "";
+                                <option value="@c.CategoryId" selected="@(selectedCategory == c.CategoryId.ToString() ? "selected" : null)">
+                                    @c.Name
+                                </option>
+
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="col-md-4 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary">
+                        Filter
+                    </button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">
+                        Reset
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            There are no products yet.
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var product in Model)
+            {
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm card-hover">
+                        <div class="ratio ratio-4x3 bg-light d-flex align-items-center justify-content-center">
+                            @if (!string.IsNullOrEmpty(product.Photo))
+                            {
+                                <img src="~/images/@product.Photo" class="img-fluid" alt="@product.Name" />
+                            }
+                            else
+                            {
+                                <span class="text-muted">No image</span>
+                            }
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text small text-muted mb-1">
+                                @product.Category?.Name
+                            </p>
+                            <p class="card-text fw-bold mb-0">
+                                $@product.Price
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between">
+                            <a asp-action="Details"
+                               asp-route-id="@product.ProductId"
+                               class="btn btn-sm btn-outline-secondary">
+                                Details
+                            </a>
+                            <a asp-action="Edit"
+                               asp-route-id="@product.ProductId"
+                               class="btn btn-sm btn-outline-primary">
+                                Edit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

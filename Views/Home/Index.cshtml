@@ -1,8 +1,173 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Shoppia.ViewModels.HomeViewModel
+
+@{
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="container py-4">
+
+    <!-- Hero / Banner -->
+    <section class="row align-items-center mb-5">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <h1 class="display-4 fw-bold hero-hover">Welcome to Shoppia</h1>
+            <p class="lead hero-hover-sub">
+                Multi‑vendor marketplace where different sellers can list their products
+                and customers can shop everything in one place.
+            </p>
+
+
+            <a class="btn btn-primary btn-lg me-2"
+               asp-controller="Products"
+               asp-action="Index">
+                Start Shopping
+            </a>
+
+            </a>
+            <a class="btn btn-outline-secondary btn-lg"
+               asp-controller="Vendors"
+               asp-action="Index">
+                Become a Vendor
+            </a>
+
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="border rounded-3 p-4 bg-light">
+                <h5 class="fw-semibold mb-3">Why Shoppia?</h5>
+                <ul class="list-unstyled mb-0 text-start">
+                    <li>• Many vendors, one marketplace.</li>
+                    <li>• Secure checkout and order tracking.</li>
+                    <li>• Easy dashboard for vendors to manage products.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories section -->
+    <section class="mb-5">
+        <h2 class="h3 mb-4">Popular Categories</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Electronics</h5>
+                        <p class="card-text small text-muted">
+                            Phones, laptops and accessories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Fashion</h5>
+                        <p class="card-text small text-muted">
+                            Clothes, shoes and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Home &amp; Kitchen</h5>
+                        <p class="card-text small text-muted">
+                            Furniture and home accessories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Beauty</h5>
+                        <p class="card-text small text-muted">
+                            Skincare and cosmetics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured products -->
+    <section class="mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h3 mb-0">Featured Products</h2>
+            <a asp-controller="Products" asp-action="Index" class="text-decoration-none">View all</a>
+
+        </div>
+
+        <div class="row g-4">
+            @foreach (var product in Model.FeaturedProducts)
+            {
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="ratio ratio-4x3 bg-light d-flex align-items-center justify-content-center">
+                            @if (!string.IsNullOrEmpty(product.Photo))
+                            {
+                                <img src="~/images/@product.Photo" class="img-fluid" alt="@product.Name" />
+                            }
+                            else
+                            {
+                                <span class="text-muted">No image</span>
+                            }
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text small text-muted mb-1">
+                                @product.Category?.Name
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">$@product.Price</span>
+                            <a asp-controller="Products"
+                               asp-action="Details"
+                               asp-route-id="@product.ProductId"
+                               class="btn btn-sm btn-primary">
+                                View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </section>
+    <!-- Top vendors (static for now) -->
+    <section class="mb-5 mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h3 mb-0">Top Vendors</h2>
+            <a asp-controller="Vendors" asp-action="Index" class="text-decoration-none">
+                View all vendors
+            </a>
+        </div>
+
+        <div class="row g-4">
+            @foreach (var vendor in Model.TopVendors)
+            {
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@vendor.Name</h5>
+                            <p class="card-text small text-muted">
+                                @vendor.Email
+                            </p>
+                            @if (vendor.IsActive)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Inactive</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+
+
 </div>

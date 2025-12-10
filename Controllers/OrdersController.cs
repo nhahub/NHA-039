@@ -17,6 +17,8 @@ namespace Shoppia.Controllers
         }
 
         // GET: Orders
+        [AllowAnonymous]
+       
         public async Task<IActionResult> Index()
         {
             var orders = await _context.Orders
@@ -27,6 +29,7 @@ namespace Shoppia.Controllers
         }
 
         // GET: Orders/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
