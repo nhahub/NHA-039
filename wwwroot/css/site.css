@@ -190,4 +190,10 @@ h1, h2, h3 {
     }
 .home-section-title {
     letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
+.footer {
+    font-size: 0.9rem;
+    background-color: #f3f4f6;
+}
+
