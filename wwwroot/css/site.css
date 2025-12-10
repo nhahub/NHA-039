@@ -188,3 +188,6 @@ h1, h2, h3 {
         border-color: var(--shp-primary);
         box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
     }
+.home-section-title {
+    letter-spacing: 0.02em;
+}
