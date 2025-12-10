@@ -1,0 +1,53 @@
+@model IEnumerable<Shoppia.Models.SupplyOrder>
+
+@{
+    ViewData["Title"] = "Supply Orders";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3 mb-0">Supply Orders</h1>
+        <a asp-action="Create" class="btn btn-primary">
+            + Create New Supply Order
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            There are no supply orders yet.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th>Order #</th>
+                        <th>Vendor</th>
+                        <th>Supply Date</th>
+                        <th class="text-end">Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in Model)
+                    {
+                        <tr>
+                            <td>@order.SupplyOrderId</td>
+                            <td>@order.Vendor?.Name</td>
+                            <td>@order.SupplyDate?.ToShortDateString()</td>
+                            <td class="text-end">$@order.Total</td>
+                            <td class="text-end">
+                                <a asp-action="Details" asp-route-id="@order.SupplyOrderId" class="btn btn-sm btn-outline-secondary">Details</a>
+                                <a asp-action="Edit" asp-route-id="@order.SupplyOrderId" class="btn btn-sm btn-outline-primary">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@order.SupplyOrderId" class="btn btn-sm btn-outline-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
